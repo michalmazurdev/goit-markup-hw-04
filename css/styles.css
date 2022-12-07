@@ -1,0 +1,308 @@
+:root {
+  --blue: #2196f3;
+  --almost-black: #212121;
+  --grey: #757575;
+  --dark-background: #2f303a;
+  --white: #ffffff;
+  --dirty-white: #f5f4fa;
+  --border-gray: #eeeeee;
+}
+body {
+  font-family: "Roboto", "Raleway", sans-serif;
+  background-color: var(--white);
+  color: var(--grey);
+}
+ul,
+h1,
+h2,
+h3,
+h4,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.section {
+  padding: 94px 0;
+}
+.navigation ul,
+.second-section ul,
+.thrid-section ul,
+.fourth-section ul,
+.portfolio-section ul {
+  list-style-type: none;
+}
+.top-section {
+  background-color: var(--white);
+  border-bottom: 1px solid #ececec;
+  padding: 24px 0 25px 0;
+}
+.top-section > div {
+  padding: 0 27px 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo-and-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 93px;
+}
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+.navigation ul {
+  display: flex;
+  justify-content: space-between;
+  width: 254px;
+}
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.17;
+  color: #000000;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+}
+
+.navigation a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  text-decoration: none;
+  color: var(--almost-black);
+  letter-spacing: 0.02em;
+}
+
+.logo-color,
+nav a:hover,
+nav a:focus,
+.contact-item:hover,
+.contact-item:focus,
+.bottom-style a[href^="mailto"]:hover,
+.bottom-style a[href^="mailto"]:focus,
+.bottom-style a[href^="tel"]:hover,
+.bottom-style a[href^="tel"]:focus {
+  color: var(--blue);
+}
+.contact-item {
+  font-weight: 500;
+  color: var(--grey);
+  font-size: 14px;
+  line-height: 1.14;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+}
+.primary-heading {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white);
+}
+.first-section {
+  background-color: var(--dark-background);
+}
+.order-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--white);
+  background-color: var(--blue);
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  margin: 30px 500px 0;
+}
+.second-section div,
+.thrid-section div,
+.fourth-section div,
+.portfolio-section div,
+.bottom-style div {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.second-section ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.second-section li {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: column;
+  gap: 10px;
+}
+.second-section h3 {
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--almost-black);
+}
+.second-section p {
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  flex-basis: 75px;
+}
+.thrid-section {
+  margin-top: -94px;
+}
+.thrid-section h2,
+.fourth-section h2 {
+  font-size: 36px;
+  line-height: 1.166;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--almost-black);
+  margin-bottom: 50px;
+}
+.thrid-section ul {
+  display: flex;
+  gap: 30px;
+}
+.thrid-section li {
+  flex-basis: 294px;
+  display: flex; /* in order to cancel the additional line below the img */
+}
+.fourth-section {
+  background-color: var(--dirty-white);
+}
+.fourth-section ul {
+  display: flex;
+  gap: 30px;
+}
+.fourth-section figure {
+  margin: 0;
+  background-color: var(--white);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  display: flex;
+  flex-direction: column;
+}
+.fourth-section h4 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.1875;
+  letter-spacing: 0.03em;
+  color: var(--almost-black);
+  text-align: center;
+  margin-bottom: 10px;
+}
+.fourth-section p {
+  font-size: 16px;
+  line-height: 1.1875;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+.fourth-section figcaption {
+  padding: 30px 0;
+}
+.bottom-style {
+  background-color: var(--dark-background);
+  padding: 60px 0 60px 15px;
+}
+.bottom-style .logo {
+  color: var(--white);
+}
+.bottom-style address {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+.bottom-style a[title="Lokalizacja"] {
+  text-decoration: none;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--white);
+}
+.bottom-style a[href^="mailto"],
+.bottom-style a[href^="tel"] {
+  text-decoration: none;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 50px;
+}
+
+.portfolio-section button {
+  background-color: var(--dirty-white);
+  color: var(--almost-black);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+  width: 121px;
+  height: 38px;
+}
+.portfolio-section button:hover,
+.portfolio-section button:focus {
+  background-color: #2196f3;
+  color: var(--white);
+}
+.portfolio-tiles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.portfolio-tiles figure {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+.portfolio-tiles li {
+  width: calc((100% - 60px) / 3);
+}
+.portfolio-tiles figcaption {
+  border-left: 1px solid var(--border-gray);
+  border-right: 1px solid var(--border-gray);
+  border-bottom: 1px solid var(--border-gray);
+}
+.portfolio-section h4 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--almost-black);
+  text-indent: 24px;
+  margin-bottom: 4px;
+}
+
+.portfolio-section p {
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.03em;
+  text-indent: 24px;
+}
+.portfolio-section figcaption {
+  padding: 20px 0;
+}
