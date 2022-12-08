@@ -199,7 +199,7 @@ nav a:focus,
 .fourth-section {
   background-color: var(--dirty-white);
 }
-``` .fourth-section ul {
+.fourth-section ul {
   display: flex;
   gap: 30px;
 }
