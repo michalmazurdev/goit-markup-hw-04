@@ -287,7 +287,8 @@ nav a:focus,
   width: 44px;
   height: 44px;
 }
-.fourth-section-icon:hover {
+.fourth-section-icon:hover,
+.fourth-section-icon:focus {
   fill: var(--white);
   background-color: var(--blue);
 }
