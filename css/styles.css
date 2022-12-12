@@ -130,6 +130,7 @@ nav a:focus,
   background-repeat: no-repeat;
   max-width: 1600px;
   margin: 0 auto;
+  padding: 200px 0;
 }
 .order-button {
   font-weight: 700;
@@ -436,6 +437,7 @@ nav a:focus,
 
 .portfolio-tiles li {
   width: calc((100% - 60px) / 3);
+  cursor: pointer;
 }
 .portfolio-tiles figcaption {
   border-left: 1px solid var(--border-gray);
