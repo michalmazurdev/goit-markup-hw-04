@@ -288,10 +288,16 @@ nav a:focus,
   width: 44px;
   height: 44px;
 }
-.fourth-section-icon:hover,
-.fourth-section-icon:focus {
+.fourth-section-social-media a:hover .fourth-section-icon,
+.fourth-section-social-media a:focus .fourth-section-icon {
   fill: var(--white);
   background-color: var(--blue);
+}
+.fourth-section-social-media a:focus,
+.bottom-section-social-media a:focus,
+.bottom-style a[href^="mailto"]:focus,
+.bottom-style a[href^="tel"]:focus {
+  outline: none;
 }
 .fifth-section ul {
   display: flex;
@@ -306,8 +312,8 @@ nav a:focus,
   padding: 16px 32px;
   color: var(--delicate-gray);
 }
-.fifth-section-icon-container:hover,
-.fifth-section-icon-container:focus {
+.fifth-section a:hover .fifth-section-icon-container,
+.fifth-section a:focus .fifth-section-icon-container {
   color: var(--blue);
   border: 1px solid var(--blue);
 }
@@ -366,7 +372,8 @@ nav a:focus,
   text-transform: uppercase;
   color: var(--white);
 }
-.fifth-section-social-media {
+.fifth-section-social-media,
+.bottom-section-social-media {
   display: flex;
   gap: 10px;
   width: 206px;
@@ -378,10 +385,11 @@ nav a:focus,
   fill: var(--white);
   background-color: rgba(255, 255, 255, 0.1);
 }
-.bottom-section-icon:hover,
-.bottom-section-icon:focus {
+.bottom-section-social-media a:hover .bottom-section-icon,
+.bottom-section-social-media a:focus .bottom-section-icon {
   background-color: var(--blue);
 }
+
 .filter-buttons {
   display: flex;
   justify-content: center;
