@@ -97,6 +97,10 @@ nav a:focus,
 .bottom-style a[href^="tel"]:focus {
   color: var(--blue);
 }
+nav a:focus,
+.contact-item:focus {
+  outline: none;
+}
 .contact-item {
   font-weight: 500;
   color: var(--grey);
